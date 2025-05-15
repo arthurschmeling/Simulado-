@@ -8,16 +8,16 @@ public class JavaApplication134 {
     public static void main(String[] args) {
         Scanner ler= new Scanner(System.in);
           DecimalFormat decimal = new DecimalFormat("0.00");
-          //variaveiss//
+       
           int fora=0;
           int dentro=0;
           int total= 15;
           double percentualDentro;
           double percentualFora;
-          //////////////
+         
           percentualDentro = (dentro * 100.0) / total;
           percentualFora = (fora * 100.0) / total;
-          /////////////
+         
           for (int i = 1; i <= total; i++) {
             System.out.print("Digite o " + i + "º valor: ");
             int valor = ler.nextInt();
@@ -28,10 +28,14 @@ public class JavaApplication134 {
                 fora++;
             }
         }
-System.out.println("Resultados:");
+        System.out.println("Resultados:");
+
         System.out.println("Valores dentro do intervalo [8,15]: " + dentro);
+
         System.out.println("Valores fora do intervalo: " + fora);
+
         System.out.printf("Percentual dentro:", percentualDentro);
+
         System.out.printf("Percentual fora:", percentualFora);
 
     }
